@@ -404,7 +404,7 @@
       document.getElementById('vol-display').textContent = volume;
 
       if (!candleOut) {
-        if (volume > 0) {
+        if (volume > 80) {
           blowProgress = Math.min(1, blowProgress + 0.02);
           if (blowProgress >= 1) {
             candleOut = true; blowProgress = 0;
